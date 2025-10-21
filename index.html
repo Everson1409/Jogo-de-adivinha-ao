@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    
+</head>
+
+    <link rel="stylesheet" href="estilo.css">           
+
+<body>
+    <h1> 🎯Jogo de Adivinhação</h1>
+
+
+    <section class="Descricao">
+        <p>Bem-vindo ao Jogo de Adivinhação!  
+Seu objetivo é tentar descobrir qual número secreto o computador escolheu — um número entre <strong >1</strong> a <strong>100</strong> .  
+Você terá <strong> 10</strong> tentativas para acertar. Boa sorte!</p>
+</section><br>
+    
+
+    <section class="Jogo">
+        <label for="palpite">Digite seu palpite:</label>
+        <input id="palpite" type="number" min="1" max="100" placeholder="EX:57">
+</section><br>
+    
+    <button id="botaoChutar">Chutar</button>
+    
+    <p id="mensagem"></p>
+    <p id="tentativasRestantes"></p>
+   
+    <script src="script.js"></script>
+
+</body>
+</html>

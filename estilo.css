@@ -1,0 +1,67 @@
+/* estilo.css - Tema Futurista Neon */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  background: linear-gradient(270deg, #090979, #00d4ff, #ff0099);
+  background-size: 600% 600%;
+  animation: moverFundo 10s ease infinite;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+@keyframes moverFundo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+}
+
+section {
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  width: 70%;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+
+input {
+  background: transparent;
+  border: 2px solid #00eaff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  background: #00eaff;
+  border: none;
+  color: black;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ff0099;
+  color: white;
+  transform: scale(1.05);
+}
+
+#mensagem {
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+
